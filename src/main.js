@@ -4,6 +4,7 @@ import { loadScript } from 'esri-loader'
 import App from './App.vue'
 import HomeButton from './HomeButton.vue'
 import LocateButton from './LocateButton.vue'
+import './assets/font/iconfont.css'
 Vue.use(VueRouter)
 
 // 2. Define some routes

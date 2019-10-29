@@ -32,7 +32,6 @@ export default {
 
         const vecMap = new BDVecLayer();
         map.addLayer(vecMap);
-
         const anoMap = new BDAnoLayer();
         map.addLayer(anoMap);
 
@@ -52,7 +51,8 @@ export default {
 
 <style>
 .map {
-  height: 500px;
+  height: 100%;
+  width: 100%;
 }
 .HomeButton {
   position: relative;

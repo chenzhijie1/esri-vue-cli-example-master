@@ -11,10 +11,11 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,
+        test: /\.(less|css)$/,
         use: [
           'vue-style-loader',
-          'css-loader'
+          'css-loader',
+          'less-loader'
         ],
       },
       {
@@ -37,6 +38,14 @@ module.exports = {
         options: {
           name: '[name].[ext]?[hash]'
         }
+      },
+      {
+        test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+        loader: 'url-loader',
+        // options: {
+        //   limit: 10000,
+        //   name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
+        // }
       }
     ]
   },
